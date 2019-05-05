@@ -1,0 +1,13 @@
+<div *ngIf="blogs">
+<div class="panel panel-primary" *ngFor="let item of blogs" >
+    <div class="panel-heading">{{item.heading}}</div>
+    <div class="panel-body">{{item.blog}}</div>
+    <div class="panel-success">{{item.writter}}</div>
+  </div>
+</div>
+<div *ngIf="!blogs">
+  <div class="panel panel-primary"  >
+    <div class="panel-heading">page not found <h1 style="color:red">404</h1></div>
+    
+  </div>
+</div>

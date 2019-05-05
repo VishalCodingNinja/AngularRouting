@@ -1,0 +1,220 @@
+<nav [ngClass]="{'a': true}">
+        <div class="container-fluid">
+        <div class="navbar-header">
+         
+     
+        <ul>
+     <a  style="font-size:30px;cursor:pointer;color: white ;" id="toggleIcon">&#9776;</a>
+        <img class="SmallImg"   src="../assets/Images/logo.png">
+    </ul>
+        </div>
+        <ul class="nav navbar-nav" style="display: inline ">
+        <li><a routerLink="/Features">Features</a></li>
+        <li><a routerLink="/Docs">Documents</a></li>
+        <li><a routerLink="/Resources">Resources</a></li>
+        <li><a routerLink="/Events">Events</a></li>
+        <li><a routerLink="/Blogs">Blog</a></li>
+        </ul>
+        <input style="border-radius: 25px; height: 35px; float: right; margin-top: 5px; width: 200px; float:right;color: black" type="text" placeholder="search"/>
+         
+        </div>
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <nav class="navbar AngularColor">
+    
+    <div class="container-fluid">
+            <div class="row">
+      <div  class="navbar-header" style="">
+          <a  style="font-size:30px;cursor:pointer;color: white ;" id="toggleIcon">&#9776;</a>
+      </div>  
+      <div class="navbar-header">
+           
+            <a class="navbar-brand" routerLink="/" >
+              <img class="SmallImg"   src="../assets/Images/logo.png"><h5 style="display: inline;color:white;">    </h5>
+            </a>
+        
+        <ul class="nav navbar-nav" style="float: left;">
+            <li>
+                <a routerLink="/">
+                    <h4>Home</h4>
+                </a>
+            </li>
+          
+          </ul>
+        <ul class="nav navbar-nav">
+            <li>
+                <a routerLink="/Features">
+                    <h4>Features</h4>
+                </a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav">
+            <li>
+                <a routerLink="/Docs">
+                    <h4>Docs</h4>
+                </a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav">
+          <li>
+              <a routerLink="/Resources">
+                  <h4>Resources</h4>
+              </a>
+          </li>
+      </ul>
+      <ul class="nav navbar-nav">
+        <li>
+            <a routerLink="/Events">
+                <h4>Events</h4>
+            </a>
+        </li>
+    </ul>
+    <ul class="nav navbar-nav">
+      <li>
+          <a routerLink="/Blogs">
+              <h4>Blogs</h4>
+          </a>
+      </li>
+  </ul>
+</div>
+    </div>
+    </div>
+  </nav> -->
+
+
+
+
+  <div class="row constainer-fluid"  >
+    <div class="col-sm-2"  id="sideBar">
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link active  Aclass" routerLink="/GettingStarted">GETTING STARTED </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link Aclass"  id="TutIDForToggle" routerLink="/Totorials">TUTORIALS</a>
+
+                    <ol class="nav flex-column" id="OlID">
+                        <li class="nav-item">
+                            <a class="nav-link active  Aclass" routerLink="Totorials/Introduction">1. Introduction </a>
+                           </li>
+                          <li class="nav-item">
+                              <a class="nav-link active  Aclass" routerLink="Totorials/The">2. The Application Cell </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active  Aclass" routerLink="Totorials/HeroEditor">3 The Hero Editor</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link active  Aclass" routerLink="Totorials/Displaying">4. Displaying a list </a>
+                                </li>
+                           </ol>
+
+
+
+                  </li>
+
+
+
+                  <li class="nav-item">
+                      <a class="nav-link Aclass" id="fundamentalID">FUNDAMENTALS</a>
+                      <ol class="nav flex-column" id="fundamentalChild">
+                          <li class="nav-item">
+                              <a class="nav-link active  Aclass" id="ArchitectureID" routerLink="/Architecture">Architecture </a>
+
+
+                              <ol class="nav flex-column" id="fundamentalChildChild">
+                                  <li class="nav-item">
+                                      <a class="nav-link active  Aclass" routerLink="Architecture/ArchitectureOverview">1. Architecture Overview </a>
+                                      
+                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active  Aclass" routerLink="Architecture/IntroductionToComponents">2. Introduction to Modules </a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link active  Aclass" routerLink="Architecture/IntroductionToModules">3. Introduction to Components</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active  Aclass" routerLink="Architecture/IntroductionToServices">4. Introduction to Services </a>
+                                          </li>
+                                          <li class="nav-item">
+                                            <a class="nav-link active  Aclass" routerLink="Architecture/IntroductionToTemplates">4. Introduction to Template</a>
+                                          </li>
+                                          
+                                     </ol>
+
+
+
+
+
+                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link active  Aclass" routerLink="/ComponentsAndTemplates">Components & Templates </a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link active  Aclass"routerLink="/FormsInDepth">Forms</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active  Aclass" routerLink="/ObserablesAndRxJS">Observables & RxJS </a>
+                                  </li>
+                             </ol>
+
+
+
+                    </li>
+
+
+                 
+                  <li class="nav-item">
+                      <a class="nav-link Aclass" routerLink="/Techniques">TECHNIQUES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link Aclass" routerLink="/API">API</a>
+                      </li>
+                </ul>
+             
+               
+              
+              </div>
+            </div>
+          </div>
+
+    </div> 
+  
+  <div class="col-sm-10">
+
+      <router-outlet></router-outlet>
+
+
+
+<!-- progress tracker-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <app-footer></app-footer>
+  </div>
+</div>

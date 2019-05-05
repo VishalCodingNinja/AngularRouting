@@ -1,0 +1,28 @@
+<div *ngIf="rout.children.length === 0"><h1>Events</h1>
+
+<table class="table" >
+    <thead class="thead-dark">
+      <tr>
+         <th>Event Id</th>
+        <th >Events</th>
+        <th >Location</th>
+        <th >Date</th>
+     </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let event of Events" >
+          
+        <th >{{event.eventId}}</th>
+        <th> <a [routerLink]="['EventsDetails',event.eventId]" (click)="notifyChild()" ><div>
+            
+        </div>{{event.event}} </a></th>
+
+        <td>{{event.location}}</td>
+        <td>{{event.date}}</td>
+     </tr>
+   </tbody>
+  </table>
+    
+</div>
+
+  <router-outlet></router-outlet>
